@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textViewcat"
+        android:autoText="false"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/textViewDate"
+        android:layout_alignRight="@+id/textViewfinal"
+        android:layout_alignEnd="@+id/textViewfinal"
+        android:layout_toLeftOf="@+id/textViewfinal" />
+
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewfinal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewcat"
+        android:gravity="center"
+        android:layout_toLeftOf="@+id/textViewDate"
+        android:layout_marginRight="15dp" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewDate"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/textViewcat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/textViewval"
+        android:autoText="false"
+        android:gravity="center"
+        android:layout_above="@+id/textViewDate"
+        android:layout_alignRight="@+id/textViewDate"
+        android:layout_alignEnd="@+id/textViewDate"
+        android:layout_alignLeft="@+id/textViewDate"
+        android:layout_alignStart="@+id/textViewDate"
+        android:layout_toRightOf="@+id/textViewcat" />
+
+</RelativeLayout>
